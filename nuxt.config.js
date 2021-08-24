@@ -1,6 +1,6 @@
 export default {
   mode: "universal",
-  target: "static",
+  target: "ssr",
   /*
    ** Headers of the page
    */
@@ -28,7 +28,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/vue-awesome.js" }],
+  //plugins: [{ src: "~/plugins/vue-awesome.js" }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -63,8 +63,8 @@ export default {
   ],
 
   /* top-level ignore property
-     lazy-loading-example.vue page won't be generated during 
-     npm run generate 
+     lazy-loading-example.vue page won't be generated during
+     npm run generate
   */
   // ignore: "pages/lazy-loading-example.vue",
 
@@ -81,7 +81,7 @@ export default {
    */
   build: {
     additionalExtensions: ["jsx"],
-    transpile: [/^vue-awesome/],
+    //transpile: [/^vue-awesome/],
     /*
      ** You can extend webpack config here
      */
